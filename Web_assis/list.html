@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Lists Example</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            text-align: center; /* center text */
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #a8edea, #fed6e3, #fff5bc);
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "Cormorant Garamond", serif;
+        }
+
+        ol, ul, dl {
+            display: inline-block; /* keeps list centered as a block */
+            text-align: left; /* align list items properly */
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #0077cc;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .ordered-list{
+            margin: 40px 0px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .unord-list{
+            margin: 40px 0px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .defination-list{
+            margin: 40px 0px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+         hr {
+        border: none;              /* Remove default style */
+        height: 4px;               /* Thickness of the line */
+        background-color: #333;    /* Dark color (you can change it) */
+        margin: 20px auto;         /* Space above and below */
+        width: 80%;                /* Shorter than full width */
+    }
+    h1{
+        
+        padding-top: 30px;
+    }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML Lists</h1>
+<hr>
+    <div class="ordered-list">
+        <!-- Ordered List -->
+        <h2>Ordered List</h2>
+        <ol>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Mango</li>
+        </ol>
+        <br>
+        <a href="https://stackoverflow.com/tags/html-lists/info">Know more about Lists</a>
+        <hr>
+    </div>
+
+    <div class="unord-list">
+        <!-- Unordered List -->
+        <h2>Unordered List</h2>
+        <ul>
+            <li>Car</li>
+            <li>Bike</li>
+            <li>Bus</li>
+        </ul>
+        <br>
+        <a href="https://stackoverflow.com/tags/html-lists/info">Know more about Lists</a>
+        <hr>
+    </div>
+
+    <!-- Definition List -->
+
+    <div class="defination-list">
+    <h2>Definition List</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language - the standard markup for web pages.</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets - used for styling HTML elements.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>A programming language used to make web pages interactive.</dd>
+    </dl>
+    <br>
+    <a href="https://stackoverflow.com/tags/html-lists/info">Know more about Lists</a>
+
+</div>
+</body>
+
+</html>

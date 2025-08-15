@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Bar of Web Assignment</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Cormorant Garamond", serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #faa2e1, #9abfff);
+    }
+
+    .part-1 {
+      text-align: center;
+      padding-top: 1.5rem;
+    }
+
+    .part-2 {
+      text-align: center;
+      padding-top: 2rem;
+    }
+
+    .part-2 .btn {
+      padding: 4px 30px;
+      border-radius: 5px;
+      border: none;
+      font-size: 30px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .part-2 .btn:hover {
+      border: 4px solid transparent;
+      border-image: linear-gradient(to left, #fbc2eb, #a6c1ee) 1;
+      background-color: white;
+      box-shadow: 0 4px 8px #a6c1ee, 0 6px 20px #fbc2eb;
+      text-decoration: none;
+      color: rgb(5, 102, 129);
+      transform: translateY(-3px);
+    }
+
+    .part-2 a {
+      text-decoration: none;
+    }
+  </style>
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1 class="part-1">
+    This Page is for the Menu Bar of Web Assignment
+  </h1>
+
+  <div class="part-2">
+    <a href="list.html"><button class="btn">Assignment 1</button></a>
+  </div>
+
+  <div class="part-2">
+    <a href="table.html"><button class="btn">Assignment 2</button></a>
+  </div>
+
+  <div class="part-2">
+    <a href="frame.html"><button class="btn">Assignment 3 (Frame tag)</button></a>
+  </div>
+
+  
+  
+</body>
+
+</html>

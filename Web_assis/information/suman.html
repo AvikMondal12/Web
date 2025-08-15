@@ -1,0 +1,215 @@
+information/<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: "Cormorant Garamond", serif;
+            background: linear-gradient(120deg, #89f7fe, #f8a3d1);
+            margin: 0;
+            padding: 0;
+            color: #333;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+            margin-top: 50px;
+            backdrop-filter: blur(10px);
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        h2 {
+            color: #05597b;
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #048695, #ff5a07);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h3 {
+            color: #1e3c72;
+            margin-top: 25px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        h3::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #2193b0, #6dd5ed);
+            border-radius: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            padding: 10px 15px;
+            background: rgba(255,255,255,0.7);
+            margin-bottom: 8px;
+            border-radius: 8px;
+            transition: all 0.4s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            animation: fadeInItem 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeInItem {
+            from { opacity: 0; transform: translateX(-10px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        ul li:nth-child(1) { animation-delay: 0.1s; }
+        ul li:nth-child(2) { animation-delay: 0.2s; }
+        ul li:nth-child(3) { animation-delay: 0.3s; }
+        ul li:nth-child(4) { animation-delay: 0.4s; }
+
+        ul li:hover {
+            background: linear-gradient(90deg, #ff9966, #ff5e62);
+            color: white;
+            transform: translateX(8px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        .highlight {
+            background: linear-gradient(90deg, #ffe259, #ffa751);
+            color: #333;
+            padding: 5px 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .highlight:hover {
+            background: linear-gradient(90deg, #ff9966, #ff5e62);
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+        }
+
+        .section {
+            background: rgba(255,255,255,0.8);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .section:hover {
+            background: rgba(255,255,255,0.95);
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+            transform: scale(1.02);
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            margin-right: 15px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Hii, I'm Avik Mondal. A student of Brainware University in MCA stream. A Frontend Developer </h2>
+
+        <div class="section">
+            <h3>Education Qualification</h3>
+            <ul>
+                <li>Secondary from Dainhat High School</li>
+                <li>High Secondary from Dainhat School</li>
+                <li>Graduation in BCA from Brainware University</li>
+                <li>MCA from Brainware University (On Going)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Address :</h3>
+            <p>Depara, Sudpur, Katwa, Purba Bardhaman, 713150</p>
+        </div>
+
+        <div class="section">
+            <h3>Phone / Contact :</h3>
+            <p class="highlight">9832711018</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/AvikMondal" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/abstracted-m7" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+                </a>
+                <a href="https://leetcode.com/your-username" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" 
+                 alt="LeetCode" >
+        </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Gmail :</h3>
+            <p class="highlight">bwumca040@brainwareuniversity.ac.in</p>
+        </div>
+
+        <div class="section">
+            <h3>Skills :</h3>
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>HTML (Boaotstrap)</li>
+                <li>CSS (Tailwind)</li>
+                <li>PHP</li>
+                <li>JavaScript (React)</li>
+                <li>Mongo DB</li>
+                <li>My SQL</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
