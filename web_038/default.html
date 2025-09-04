@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Google-like Homepage</title>
+    <style>
+      /* Reset */
+      * {
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        background: white;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Center everything vertically and horizontally */
+      .container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Google logo style (simplified) */
+      .logo {
+        font-family: "Product Sans", Arial, sans-serif;
+        font-weight: 700;
+        font-size: 100px;
+        color: #4285f4;
+        letter-spacing: 5px;
+        margin-bottom: 40px;
+        user-select: none;
+      }
+      /* Multi-color text like Google logo */
+      .logo span:nth-child(1) {
+        color: #4285f4;
+      } /* blue */
+      .logo span:nth-child(2) {
+        color: #ea4335;
+      } /* red */
+      .logo span:nth-child(3) {
+        color: #fbbc05;
+      } /* yellow */
+      .logo span:nth-child(4) {
+        color: #4285f4;
+      } /* blue */
+      .logo span:nth-child(5) {
+        color: #34a853;
+      } /* green */
+      .logo span:nth-child(6) {
+        color: #ea4335;
+      } /* red */
+
+      /* Search box */
+      form {
+        display: flex;
+        align-items: center;
+        width: 560px;
+        max-width: 90vw;
+        border: 1px solid #dfe1e5;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 0.2);
+        border-radius: 24px;
+        padding: 0 15px;
+      }
+      input[type="text"] {
+        flex: 1;
+        height: 44px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        padding: 0 10px;
+        border-radius: 24px;
+      }
+      button {
+        background-color: #f8f9fa;
+        border: none;
+        color: #3c4043;
+        font-size: 14px;
+        margin-left: 10px;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        user-select: none;
+        transition: background-color 0.3s;
+      }
+      button:hover {
+        background-color: #f1f3f4;
+      }
+      button:active {
+        background-color: #e8e8e8;
+      }
+
+      /* Footer (simplified) */
+      footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        color: #70757a;
+        border-top: 1px solid #e4e4e4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo" aria-label="Google">
+        <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span
+        ><span>e</span>
+      </div>
+
+      <form action="https://www.google.com/search" method="GET" target="_blank">
+        <input type="text" name="q" aria-label="Search" autocomplete="off" />
+        <button type="submit">Google Search</button>
+      </form>
+    </div>
+
+    <footer>
+      Country: United States — Google offered in: <a href="#">English</a>
+      <a href="#">Español</a>
+    </footer>
+  </body>
+</html>

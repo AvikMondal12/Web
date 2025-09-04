@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #e53997;
+            --light: #f8f9fa;
+            --dark: #212529;
+        }
+        .logo {
+            font-size: 1.5rem;
+            margin-left: 5px;
+            font-weight: bold;
+            color: var(--secondary);
+        }
+        .menu-toggle {
+            display: block;
+            margin-left: 10px;
+            background: var(--secondary);
+            border: none;
+            color: var(--primary);
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .menu {
+            display: none;
+            background: white;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 3px;
+        }
+        .menu.active {
+            display: block;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+        .menu li {
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .menu li:last-child {
+            border-bottom: none;
+        } 
+        .menu a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .menu a:hover {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+<body>
+        <header>
+        <div class="logo">Content</div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="default.html" target="contentFrame">Home page</a></li>
+                <li><a href="index.html" target="contentFrame">Hotel Page</a></li>
+                <li><a href="table.htm" target="contentFrame">table page</a></li>
+                
+            </ul>
+        </div>
+    </header>
+
+     <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>
